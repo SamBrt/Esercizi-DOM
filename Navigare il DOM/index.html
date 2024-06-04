@@ -24,15 +24,24 @@
         //Elemento Parente di ul
         console.log(ul.parentElement)
 
-        //Secondo elemento figlio di ul
-        console.log(ul.children[1])            //So che avrei potuto usare .innerHTML, ma ho preferito assegnare delle classi ai list-item, 
-                                               //in modo che risultassero nell'output.
+      //Secondo elemento figlio di ul
+        const li2 = ul.children[1]
+        const li2Text = li2.innerText
+        console.log(li2Text)
+        console.log(li2)  
+
 
         //Elemento fratello successivo del secondo li.
-        console.log(ul.children[1].nextElementSibling)
+        const li3 = ul.children[1].nextElementSibling
+        const li3Text = li3.innerText
+        console.log(li3Text)
+        console.log(li3)
 
         //Elemento fratello precedente del secondo li.
-        console.log(ul.children[1].previousElementSibling)
+        const li1 = ul.children[1].previousElementSibling
+        const li1Text = li1.innerText
+        console.log(li1Text)
+        console.log(li1)
     </script>
 </body>
 
